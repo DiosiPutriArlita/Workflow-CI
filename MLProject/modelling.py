@@ -8,7 +8,7 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 
 
 # Load dataset preprocessing
-df = pd.read_csv("travel_insurance_preprocessing.csv")
+df = pd.read_csv("MLProject/travel_insurance_preprocessing.csv")
 
 X = df.drop("TravelInsurance", axis=1)
 y = df["TravelInsurance"]
