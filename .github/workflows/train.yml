@@ -25,3 +25,9 @@ jobs:
     - name: Train Model
       run: |
         python MLProject/modelling.py
+
+    - name: Upload Training Artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: training-artifacts
+        path: MLProject
